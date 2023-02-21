@@ -13,14 +13,18 @@ console.log(etaUtente);
 // creo variabile che è risultato tra kmPreferiti e la tariffa di 0,21€ al km
 
 let prezzoBiglietto = kmPreferiti * 0.21;
-console.log(prezzoBiglietto);
+
 
 // dal risultato del prezzo applico i vari sconti in base all'età
 
-if(etaUtente < 18) {
-     
-    console.log(prezzoBiglietto - (prezzoBiglietto / 100 * 20));
-    
+if(etaUtente < 18) { 
+    document.querySelector('h1').innerHTML = 'Il prezzo del tuo biglietto è di ' + (prezzoBiglietto - (prezzoBiglietto / 100 * 20)).toFixed(2) + '€';
+    console.log('Il prezzo del tuo biglietto è di ' + (prezzoBiglietto - (prezzoBiglietto / 100 * 20)).toFixed(2) + '€');    
 } else if(etaUtente > 65) {
-    console.log(prezzoBiglietto - (prezzoBiglietto / 100 * 40));
+    document.querySelector('h1').innerHTML = 'Il prezzo del tuo biglietto è di ' + (prezzoBiglietto - (prezzoBiglietto / 100 * 40)).toFixed(2) + '€';
+    console.log('Il prezzo del tuo biglietto è di ' + (prezzoBiglietto - (prezzoBiglietto / 100 * 40)).toFixed(2) + '€');
+} else {
+    document.querySelector('h1').innerHTML = 'Il prezzo del tuo biglietto è di ' + prezzoBiglietto.toFixed(2) + '€';
+    console.log('Il prezzo del tuo biglietto è di ' + prezzoBiglietto.toFixed(2) + '€');
 }
+
