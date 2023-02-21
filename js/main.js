@@ -21,4 +21,6 @@ if(etaUtente < 18) {
      
     console.log(prezzoBiglietto - (prezzoBiglietto / 100 * 20));
     
+} else if(etaUtente > 65) {
+    console.log(prezzoBiglietto - (prezzoBiglietto / 100 * 40));
 }
