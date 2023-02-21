@@ -12,5 +12,8 @@ console.log(etaUtente);
 
 // creo variabile che è risultato tra kmPreferiti e la tariffa di 0,21€ al km
 
-let prezzoBiglietto = kmPreferiti * 0,21;
+let prezzoBiglietto = kmPreferiti * 0.21;
 console.log(prezzoBiglietto);
+
+// dal risultato del prezzo applico i vari sconti in base all'età
+
