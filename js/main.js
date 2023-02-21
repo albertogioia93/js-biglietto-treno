@@ -17,3 +17,8 @@ console.log(prezzoBiglietto);
 
 // dal risultato del prezzo applico i vari sconti in base all'età
 
+if(etaUtente < 18) {
+     
+    console.log(prezzoBiglietto - (prezzoBiglietto / 100 * 20));
+    
+}
