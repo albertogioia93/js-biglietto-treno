@@ -28,3 +28,4 @@ if(etaUtente < 18) {
     console.log('Il prezzo del tuo biglietto è di ' + prezzoBiglietto.toFixed(2) + '€');
 }
 
+// NOTE PERSONALI: per mettere i 2 numeri dopo la virgola ho scritto .toFixed(2) dopo le variabili ricavate. Penso di aver trovato altre soluzioni su internet ma penso anche di non averle capite.
